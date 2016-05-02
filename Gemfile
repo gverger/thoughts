@@ -7,3 +7,6 @@ gem "middleman-blog", "~> 3.5.3"
 
 # For feed.xml.builder
 gem "builder", "~> 3.0"
+
+# To publish to github pages
+gem "middleman-gh-pages"
