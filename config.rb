@@ -81,11 +81,16 @@ set :markdown_engine, :redcarpet
 activate :syntax, line_numbers: true
 
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+helpers do
+  # Replaces the img urls to match the ones from the articles
+  def article_summary(article)
+    summary = Nokogiri::HTML(article.summary)
+    summary.xpath('//img').each do |img|
+      img['src'] = "images/#{article.data['images']}#{img['src']}"
+    end
+    summary
+  end
+end
 
 set :css_dir, 'stylesheets'
 

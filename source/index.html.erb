@@ -15,7 +15,7 @@ per_page: 10
     <li>
       <h1 class="article-title"><%= link_to article.title, article %></h1>
       <h5><%= article.date.strftime('%b %e') %></h5>
-      <p><%= Nokogiri::HTML(article.summary).text %></p>
+      <p><%= article_summary(article) %></p>
     </li>
   <% end %>
 </ul>
