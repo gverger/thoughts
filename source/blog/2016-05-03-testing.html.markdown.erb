@@ -1,13 +1,11 @@
 ---
-title: testing
+title: Testing editing stuff with middleman
 description:
 date: 2016-05-03 10:21:58 UTC
 tags: testing
 author: guillaume
 images: testing
 ---
-
-# Testing editing stuff with middleman
 
 Here is some ruby code
 
@@ -19,14 +17,6 @@ end
 
 and here is a random image
 ![random](<%= locals.key?("images_dir") ? locals["images_dir"] : current_page.data.images %>/random.png)
-
-<%= locals.inspect %>
-
-<% current_page.metadata %>
-
-<%= current_page.public_methods %>
-
-
 just to prove it works correctly
 
 
