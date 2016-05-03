@@ -11,6 +11,9 @@ gem "builder", "~> 3.0"
 # To publish to github pages
 gem "middleman-gh-pages"
 
+gem "middleman-syntax"
+gem "redcarpet"
+
 gem "middleman-livereload"
 
 gem 'bitters'

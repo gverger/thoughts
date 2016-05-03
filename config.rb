@@ -12,7 +12,7 @@ activate :blog do |blog|
   # Matcher for blog source files
   blog.sources = "{year}-{month}-{day}-{title}.html"
   # blog.taglink = "tags/{tag}.html"
-  # blog.layout = "layout"
+  blog.layout = "post_layout"
   # blog.summary_separator = /(READMORE)/
   # blog.summary_length = 250
   # blog.year_link = "{year}.html"
@@ -72,6 +72,11 @@ page "/feed.xml", layout: false
 configure :development do
   activate :livereload
 end
+
+set :markdown_engine, :redcarpet
+ set :markdown, fenced_code_blocks: true, smartypants: true
+
+activate :syntax, line_numbers: true
 
 # Methods defined in the helpers block are available in templates
 # helpers do
