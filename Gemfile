@@ -19,3 +19,5 @@ gem "middleman-livereload"
 gem 'bitters'
 gem 'bourbon'
 gem 'neat'
+
+gem 'nokogiri' # For summaries

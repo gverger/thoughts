@@ -163,6 +163,7 @@ DEPENDENCIES
   middleman-livereload
   middleman-syntax
   neat
+  nokogiri
   redcarpet
 
 BUNDLED WITH
