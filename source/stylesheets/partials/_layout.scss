@@ -20,6 +20,10 @@ ol {
   }
 }
 
+.article-title {
+  font-size: 1.4em;
+}
+
 .large-column {
   @include span-columns(8 of 12)
 }
