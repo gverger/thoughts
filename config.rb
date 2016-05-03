@@ -86,7 +86,7 @@ helpers do
   def article_summary(article)
     summary = Nokogiri::HTML(article.summary)
     summary.xpath('//img').each do |img|
-      img['src'] = "images/#{article.data['images']}#{img['src']}"
+      img['src'] = "images/#{article.data['images']}/#{img['src']}"
     end
     summary
   end
