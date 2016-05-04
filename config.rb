@@ -90,6 +90,15 @@ helpers do
     end
     summary
   end
+
+  def article_date(article)
+    "<span class='fa fa-calendar date'> #{article.date.strftime('%b %e')}</span>"
+  end
+
+  def article_tags(article)
+    return "" if article.tags.empty?
+    "<span class='fa fa-tag tags'> #{article.tags.join(',')}</span>"
+  end
 end
 
 set :css_dir, 'stylesheets'
