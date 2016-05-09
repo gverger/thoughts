@@ -10,9 +10,7 @@
   </head>
   <body>
     <div class="container">
-      <sidebar>
-      <%= image_tag 'logo.svg' %>
-      </sidebar>
+      <%= partial "partials/sidebar" %>
       <div id="main" role="main">
         <%= partial "partials/nav" %>
         <%= yield %>
