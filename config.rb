@@ -84,11 +84,9 @@ activate :syntax, line_numbers: true
 helpers do
   # Replaces the img urls to match the ones from the articles
   def article_summary(article)
-    summary = Nokogiri::HTML(article.summary)
-    summary.xpath('//img').each do |img|
-      img['src'] = "images/#{article.data['images']}/#{img['src']}"
-    end
-    summary
+    article.summary
+    # summary = Nokogiri::HTML(article.summary)
+    # summary
   end
 
   def article_date(article)

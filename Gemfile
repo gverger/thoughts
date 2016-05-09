@@ -10,6 +10,8 @@ gem "builder", "~> 3.0"
 
 # To publish to github pages
 gem "middleman-gh-pages"
+# gem "middleman-deploy"
+# gem 'middleman-deploy', github: 'middleman-contrib/middleman-deploy', branch: 'master'
 
 gem "middleman-syntax"
 gem "redcarpet"

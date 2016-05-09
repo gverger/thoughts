@@ -4,19 +4,18 @@ description:
 date: 2016-05-03 10:21:58 UTC
 tags: testing
 author: guillaume
-images: testing
 ---
 
 Here is some ruby code
 
 ```ruby
-def some_code(no_param)
-  puts "You sir are awesome"
+def some_code(useless_param)
+  puts "Great method!"
 end
 ```
 
 and here is a random image
-![random](<%= locals.key?("images_dir") ? locals["images_dir"] : current_page.data.images %>/random.png)
+![random](<%= image_path "testing/random.png" %>)
 just to prove it works correctly
 
 
